@@ -449,6 +449,7 @@ Favorite Poets
 
     color: var(--color-text);
     line-height: var(--line-height-body);
+    overflow-wrap: anywhere;
 }
 
 /* Shared links */
