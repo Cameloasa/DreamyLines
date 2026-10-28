@@ -498,8 +498,21 @@ Favorite Poets
     background-color: #FAF5EE;
 }
 
+@media (max-width: 48rem) {
+    .poets-container ul {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
 
+@media (max-width: 36rem) {
+    .poets-container {
+        padding-inline: var(--space-md);
+    }
 
+    .poets-container ul {
+        grid-template-columns: 1fr;
+    }
+}
 /* ==============================
    Favorite Things
    ============================== */
@@ -616,7 +629,7 @@ Favorite Poets
 
 
 /* ==============================
-   Colors and Moods
+Colors and Moods
    ============================== */
 
 .moods-container {
