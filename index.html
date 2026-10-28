@@ -3,61 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A personal webpage celebrating poetry, favorite poets, inspiring moments, and beautiful colors.">
     <title>DreamyLines</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="header-content">
-            <h1>DreamyLines ✨</h1>
-            <p>"In every moment, a poem waits to be written." - ChatGPT 😄</p>
-            <p>A collection of my favorite things, wrapped in poetry.</p>
+    <!-- Header -->
+    <header class="header" id="home">
+        <h1 class="logo">
+            <a href="#home">DreamyLines</a>
+        </h1>
+
+        <!-- Navigation -->
+        <nav class="nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#my-poem">My Poem</a></li>
+                <li><a href="#poem-of-the-day">Poem of the Day</a></li>
+                <li><a href="#poets">Poets</a></li>
+                <li><a href="#favorites">Favorites</a></li>
+                <li><a href="#moods">Moods</a></li>
+            </ul>
+        </nav>
+
+        <!-- Background Music -->
+        <div class="music-player">
+            <audio controls preload="none">
+                <source src="assets/audio/dreamy-piano.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
         </div>
     </header>
 
-    <main>
-        <div class="favorites-container">
-            <section class="favorites">
-                <h2>My Top 5 Favorite Things</h2>
-                <ol>
-                    <li>The warmth of the morning <strong>sun</strong> ☀️</li>
-                    <li>The sound of <strong>waves</strong> crashing 🌊</li>
-                    <li>A <strong>book</strong> that feels like home 📖</li>
-                    <li>The <strong>laughter</strong> of loved ones ❤️</li>
-                    <li>The magic of a starlit <strong>sky</strong> ✨</li>
-                </ol>
-            </section>
-        </div>
+    <!-- Main Content -->
+    <main class="main-content">
 
-        <div class="moods-container">
-            <section class="moods">
-                <h2>Colors of My Thoughts</h2>
-                <ul>
-                    <li style="text-align: left;">Soft pink - gentle <i>whispers</i></li>
-                    <li style="text-align: center;">Golden yellow - sunshine in <i>my heart</i>❤️</li>
-                    <li style="text-align: right;">Deep blue - <i>dreams</i> in the night</li>
-                </ul>
-            </section>
-        </div>
+        <!-- Introduction -->
+        <section class="intro">
+            <h2>Welcome to DreamyLines</h2>
+            <p>
+                Here, I share my favorite things, the colors of my thoughts,
+                and a touch of poetry that resonates with my soul.
+            </p>
+        </section>
 
-        <div class="poem-container">
-            <section class="poem-end">
-                <h2>And in the End...</h2>
-                <p><strong>Life is a canvas,</strong> painted with moments.</p>
-                <p><i>Each stroke a memory, each color a dream.</i></p>
-            </section>
-        </div>
+
+        <!-- My Poem -->
+        <section class="poem-end" id="my-poem">
+            <h2>My Little Universe</h2>
+            <p class="poem-subtitle">A poem for DreamyLines</p>
+
+            <div class="poem-text">
+                <p>
+                    I keep the sunrise in my hands,<br>
+                    The ocean's whispers on the sand.<br>
+                    A book, a laugh, a sky of blue,<br>
+                    A thousand little dreams come true.
+                </p>
+
+                <p>
+                    Soft pink for words I cannot say,<br>
+                    Gold for love that lights my day.<br>
+                    Deep blue for thoughts that wander far,<br>
+                    And silver hopes beneath each star.
+                </p>
+
+                <p>
+                    For life is more than grand design,<br>
+                    It's little moments, yours and mine.<br>
+                    And if you ask what makes me whole,<br>
+                    It's simple things that touch the soul.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Poem of the Day -->
+        <section class="poem-container" id="poem-of-the-day">
+            <h2>Poem of the Day</h2>
+            <p><strong>"The Road Not Taken"</strong> by Robert Frost</p>
+
+            <blockquote>
+                Two roads diverged in a yellow wood,<br>
+                And sorry I could not travel both<br>
+                I took the one less traveled by,<br>
+                And that has made all the difference.
+            </blockquote>
+        </section>
+
+        <!-- Favorite Poets -->
+        <section class="poets-container" id="poets">
+            <h2>Poets I Admire</h2>
+
+            <ul>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/Mihai_Eminescu"
+                       target="_blank" rel="noopener noreferrer">
+                        Mihai Eminescu
+                    </a>
+                    — The national poet of Romania, known for his romantic
+                    and philosophical poetry.
+                </li>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/Emily_Dickinson"
+                       target="_blank" rel="noopener noreferrer">
+                        Emily Dickinson
+                    </a>
+                    — An American poet whose work is characterized by its
+                    unconventional style and profound depth.
+                </li>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/Rainer_Maria_Rilke"
+                       target="_blank" rel="noopener noreferrer">
+                        Rainer Maria Rilke
+                    </a>
+                    — A Bohemian-Austrian poet and novelist, celebrated
+                    for his lyrical and existential works.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Favorite Things -->
+        <section class="favorites-container" id="favorites">
+            <h2>My Top 5 Favorite Things</h2>
+
+            <ol>
+                <li>The warmth of the morning <strong>sun</strong> ☀️</li>
+                <li>The sound of <strong>waves</strong> crashing 🌊</li>
+                <li>A <strong>book</strong> that feels like home 📖</li>
+                <li>The <strong>laughter</strong> of loved ones ❤️</li>
+                <li>The magic of a starlit <strong>sky</strong> ✨</li>
+            </ol>
+        </section>
+
+        <!-- Colors and Moods -->
+        <section class="moods-container" id="moods">
+            <h2>Colors of My Thoughts</h2>
+
+            <ul>
+                <li>Soft pink — gentle <i>whispers</i></li>
+                <li>Golden yellow — sunshine in <i>my heart</i> ❤️</li>
+                <li>Deep blue — <i>dreams</i> in the night</li>
+            </ul>
+        </section>
+
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <p>© 2025 DreamyLines | Crafted with ❤️</p>
-            <p>📖 Discover more poetry: <a href="https://en.wikipedia.org/wiki/Mihai_Eminescu" target="_blank">Mihai Eminescu’s Poems</a></p>
-        </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 DreamyLines | Crafted with ❤️</p>
+        <p>
+            📖 Discover more poetry:
+            <a href="https://en.wikipedia.org/wiki/Mihai_Eminescu"
+            target="_blank" rel="noopener noreferrer">
+                Mihai Eminescu
+            </a>
+        </p>
     </footer>
 
 </body>
 </html>
-
-

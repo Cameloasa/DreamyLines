@@ -43,12 +43,12 @@ DreamyLines/
 └── README.md
 ```
 
-## Future Improvements
+## testing tools
 
-- Move inline CSS styles into the external stylesheet.
-- Improve the responsive layout for mobile devices.
-- Refine the visual design with colors, typography, and spacing.
+- W3C Markup Validation [https://validator.w3.org/nu/]
 
 ---
 
 Created for learning and practicing HTML and CSS.
+
+![alt text](image.png)
