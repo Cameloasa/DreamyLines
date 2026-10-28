@@ -207,3 +207,546 @@ Music Player
     max-width: 100%;
 }
 
+
+/* ==============================
+Header and Navigation
+   ============================== */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+
+    padding: var(--space-md) var(--space-lg);
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: var(--shadow-soft);
+}
+
+/* Logo */
+.logo {
+    margin: 0;
+    font-size: 1.75rem;
+    white-space: nowrap;
+}
+
+.logo a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.logo a:hover {
+    color: var(--color-primary-hover);
+}
+
+/* Navigation */
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav a {
+    display: inline-block;
+    padding-block: var(--space-xs);
+
+    color: var(--color-text);
+    font-weight: var(--font-weight-semibold);
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+}
+
+
+/* ==============================
+   Introduction
+   ============================== */
+
+.intro {
+    max-width: var(--container-width);
+    margin-inline: auto;
+    padding: var(--space-section) var(--space-lg);
+
+    text-align: center;
+    background-color: var(--color-accent-pink);
+    border-bottom: 2px solid var(--color-border);
+}
+
+.intro h2 {
+    margin-bottom: var(--space-md);
+    color: var(--color-primary);
+}
+
+.intro p {
+    max-width: 42rem;
+    margin-inline: auto;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-large);
+    line-height: 1.8;
+}
+
+
+/* ==============================
+   My Poem
+   ============================== */
+
+.poem-end {
+    max-width: 52rem;
+    margin: var(--space-section) auto;
+    padding: var(--space-xl) var(--space-lg);
+
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-top: 3px solid var(--color-accent-gold);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-soft);
+
+    text-align: center;
+}
+
+.poem-end h2 {
+    margin-bottom: var(--space-xs);
+}
+
+.poem-subtitle {
+    margin-bottom: var(--space-xl);
+    color: var(--color-text-muted);
+    font-size: var(--font-size-small);
+    font-style: italic;
+}
+
+.poem-text {
+    max-width: 34rem;
+    margin-inline: auto;
+}
+
+.poem-text p {
+    margin-bottom: var(--space-lg);
+    color: var(--color-text);
+    font-family: var(--font-heading);
+    font-size: var(--font-size-large);
+    line-height: 2;
+}
+
+.poem-text p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ==============================
+Poem of the Day
+   ============================== */
+
+.poem-container {
+    max-width: var(--container-width);
+    margin: var(--space-section) auto;
+    padding: var(--space-xl) var(--space-lg);
+
+    background-color: var(--color-accent-blue);
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+}
+
+.section-label {
+    margin-bottom: var(--space-sm);
+    color: var(--color-primary);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0.15em;
+}
+
+.poem-author {
+    margin-bottom: var(--space-lg);
+    color: var(--color-text-muted);
+}
+
+.poem-author strong {
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+    font-size: var(--font-size-large);
+}
+
+.poem-author span {
+    display: block;
+    margin-top: var(--space-xs);
+    font-size: var(--font-size-small);
+}
+
+.featured-quote {
+    max-width: 38rem;
+    margin: 0 auto var(--space-lg);
+    padding: var(--space-md);
+
+    border-left: 3px solid var(--color-accent-gold);
+    color: var(--color-text);
+    font-family: var(--font-heading);
+    font-size: var(--font-size-large);
+    font-style: italic;
+    line-height: 2;
+}
+
+.poem-link {
+    display: inline-block;
+    padding: var(--space-xs) var(--space-md);
+
+    color: var(--color-primary);
+    font-weight: var(--font-weight-semibold);
+    text-underline-offset: 0.3em;
+}
+
+.poem-link:hover {
+    color: var(--color-primary-hover);
+}
+
+
+/* ==============================
+Favorite Poets
+   ============================== */
+
+/* Shared layout */
+.poets-container {
+    max-width: var(--container-width);
+    margin: var(--space-section) auto;
+    padding: var(--space-xl) var(--space-lg);
+}
+
+.poets-container h2 {
+    margin-bottom: var(--space-xl);
+    text-align: center;
+}
+
+.poets-container ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-md);
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Shared poet card */
+.poets-container li {
+    padding: var(--space-lg);
+
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-top: 4px solid var(--poet-accent);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-soft);
+
+    color: var(--color-text);
+    line-height: var(--line-height-body);
+}
+
+/* Shared links */
+.poets-container li a {
+    color: var(--poet-accent);
+    font-weight: var(--font-weight-semibold);
+    text-underline-offset: 0.25em;
+}
+
+.poets-container li a:hover {
+    color: var(--color-primary-hover);
+}
+
+/* Selected poems */
+.favorite-poem {
+    margin-top: var(--space-md);
+    padding-top: var(--space-sm);
+
+    border-top: 1px solid var(--poet-soft);
+    font-size: var(--font-size-small);
+}
+
+.favorite-poem a {
+    display: inline-block;
+    margin-top: var(--space-xs);
+}
+
+/* Mihai Eminescu — Midnight Blue */
+.poet-eminescu {
+    --poet-accent: #243B64;
+    --poet-soft: #C5D0E0;
+}
+
+/* Emily Dickinson — Sage & Ivory */
+.poet-dickinson {
+    --poet-accent: #65785D;
+    --poet-soft: #D7DFD1;
+
+    background-color: #F4EFE3;
+}
+
+/* Rainer Maria Rilke — Parchment & Burgundy */
+.poet-rilke {
+    --poet-accent: #743D4B;
+    --poet-soft: #E0C9CE;
+
+    background-color: #FAF5EE;
+}
+
+
+
+/* ==============================
+   Favorite Things
+   ============================== */
+
+.favorites-container {
+    max-width: var(--container-width);
+    margin: var(--space-section) auto;
+    padding: var(--space-xl) var(--space-lg);
+}
+
+.favorites-container h2 {
+    margin-bottom: var(--space-xl);
+    text-align: center;
+}
+
+/* Favorite things list */
+.favorites-container ol {
+    display: grid;
+    gap: var(--space-md);
+
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 0;
+
+    list-style: none;
+    counter-reset: favorite-counter;
+}
+
+/* Shared card styles */
+.favorites-container li {
+    --favorite-accent: var(--color-primary);
+    --favorite-background: var(--color-surface);
+
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+
+    padding: var(--space-md) var(--space-lg);
+
+    background-color: var(--favorite-background);
+    border: 1px solid var(--color-border);
+    border-left: 4px solid var(--favorite-accent);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-soft);
+
+    color: var(--color-text);
+    line-height: var(--line-height-body);
+
+    counter-increment: favorite-counter;
+    transition:
+        background-color var(--transition-fast),
+        border-color var(--transition-fast);
+}
+
+/* Numbered markers */
+.favorites-container li::before {
+    content: counter(favorite-counter, decimal-leading-zero);
+
+    flex-shrink: 0;
+    color: var(--favorite-accent);
+    font-family: var(--font-heading);
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-bold);
+}
+
+/* Highlight important words */
+.favorites-container li strong {
+    color: var(--favorite-accent);
+}
+
+/* Individual color accents */
+.favorite-sun {
+    --favorite-accent: #946313;
+    --favorite-background: #FFFAEC;
+}
+
+.favorite-waves {
+    --favorite-accent: #2457A7;
+    --favorite-background: #F0F6FC;
+}
+
+.favorite-book {
+    --favorite-accent: #713B62;
+    --favorite-background: #F8F1F7;
+}
+
+.favorite-love {
+    --favorite-accent: #A33C59;
+    --favorite-background: #FFF2F4;
+}
+
+.favorite-sky {
+    --favorite-accent: #4D4C83;
+    --favorite-background: #F2F2FB;
+}
+
+/* Subtle hover effect */
+.favorites-container li:hover {
+    border-left-color: var(--favorite-accent);
+    background-color: var(--favorite-background);
+}
+
+/* Small screens */
+@media (max-width: 36rem) {
+    .favorites-container {
+        padding-inline: var(--space-md);
+    }
+
+    .favorites-container li {
+        gap: var(--space-sm);
+        padding: var(--space-md);
+    }
+}
+
+
+/* ==============================
+   Colors and Moods
+   ============================== */
+
+.moods-container {
+    max-width: var(--container-width);
+    margin: var(--space-section) auto;
+    padding: var(--space-xl) var(--space-lg);
+
+    background-color: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+}
+
+.moods-container h2 {
+    margin-bottom: var(--space-xl);
+    text-align: center;
+}
+
+/* Mood palette */
+.moods-container ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-md);
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Shared mood styles */
+.moods-container li {
+    padding: var(--space-lg) var(--space-md);
+
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+    line-height: var(--line-height-body);
+}
+
+/* Soft pink */
+.moods-container li:nth-child(1) {
+    background-color: #F5E7EF;
+    border-bottom: 3px solid #C58AAA;
+    color: #713B62;
+}
+
+/* Golden yellow */
+.moods-container li:nth-child(2) {
+    background-color: #FFF5D9;
+    border-bottom: 3px solid #D6A84F;
+    color: #785315;
+}
+
+/* Deep blue */
+.moods-container li:nth-child(3) {
+    background-color: #E7EDF8;
+    border-bottom: 3px solid #647EAF;
+    color: #243B64;
+}
+
+/* Poetic emphasis */
+.moods-container li i {
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* Tablet and mobile */
+@media (max-width: 48rem) {
+    .moods-container ul {
+        grid-template-columns: 1fr;
+    }
+
+    .moods-container li {
+        padding: var(--space-md);
+        text-align: left;
+    }
+}
+
+@media (max-width: 36rem) {
+    .moods-container {
+        padding-inline: var(--space-md);
+    }
+}
+
+
+/* ==============================
+   Footer
+   ============================== */
+
+.footer {
+    margin-top: var(--space-section);
+    padding: var(--space-xl) var(--space-lg);
+
+    background-color: var(--color-primary);
+    border-top: 3px solid var(--color-accent-gold);
+    text-align: center;
+}
+
+/* Website signature */
+.footer-signature {
+    margin-bottom: var(--space-xs);
+
+    color: var(--color-surface);
+    font-family: var(--font-heading);
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-bold);
+}
+
+/* Closing message */
+.footer-message {
+    margin-bottom: var(--space-md);
+
+    color: #F5E7EF;
+    font-family: var(--font-heading);
+    font-style: italic;
+}
+
+/* Copyright */
+.footer-copyright {
+    margin-bottom: 0;
+    padding-top: var(--space-md);
+
+    border-top: 1px solid rgb(255 255 255 / 25%);
+    color: #F5E7EF;
+    font-size: var(--font-size-small);
+}
+
+/* Small screens */
+@media (max-width: 36rem) {
+    .footer {
+        padding: var(--space-lg) var(--space-md);
+    }
+}
+
+
+
